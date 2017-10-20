@@ -41,14 +41,14 @@ hr.star-primary {
   border-top: solid 5px; }
 
 hr.star-light:after,
-hr.star-primary:after {
-  font-family: FontAwesome;
-  font-size: 2em;
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005'; }
+/*hr.star-primary:after {*/
+  /*font-family: FontAwesome;*/
+  /*font-size: 2em;*/
+  /*position: relative;*/
+  /*top: -.8em;*/
+  /*display: inline-block;*/
+  /*padding: 0 0.25em;*/
+  /*content: '\f005'; }*/
 
 hr.star-light {
   border-color: white; }
@@ -75,7 +75,7 @@ section {
 
 section.success {
   color: white;
-  background: #18BC9C; }
+  background: black; }
 
 @media (max-width: 767px) {
   section {
@@ -110,15 +110,15 @@ section.success {
     outline: none; }
   #mainNav .navbar-brand {
     font-size: 1.1rem;
-    color: white; }
+    color: black; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: white; }
   #mainNav .navbar-nav {
     letter-spacing: 1px; }
     #mainNav .navbar-nav li.nav-item a.nav-link {
-      color: white; }
+      color: gray; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: #18BC9C;
+        color: black;
         outline: none; }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
         color: white; }
@@ -135,6 +135,7 @@ section.success {
 
 @media (min-width: 992px) {
   #mainNav {
+    background: gold;
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -163,10 +164,12 @@ header.masthead {
   padding-bottom: 50px;
   text-align: center;
   color: white;
-  background: #18BC9C; }
+  background: black; }
   header.masthead img {
     display: block;
-    margin: 0 auto 20px; }
+    margin: 0 auto 20px;
+    max-height: 650px;
+  }
   header.masthead .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
@@ -203,9 +206,9 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(24, 188, 156, 0.9); }
+      background: black; }
       #portfolio .portfolio-item .portfolio-link .caption:hover {
-        opacity: 1; }
+        opacity: 0.5; }
       #portfolio .portfolio-item .portfolio-link .caption .caption-content {
         font-size: 20px;
         position: absolute;
@@ -223,6 +226,11 @@ header.masthead {
 
 #portfolio * {
   z-index: 2; }
+
+#portfolio img {
+  max-width: 300px;
+  max-height: 220px;
+}
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -244,10 +252,12 @@ header.masthead {
     border: 0;
     border-radius: 0; }
     .portfolio-modal .modal-dialog .modal-content h2 {
-      font-size: 3em;
+      font-size: 2em;
       margin: 0; }
     .portfolio-modal .modal-dialog .modal-content img {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      max-height: 600px;
+    }
     .portfolio-modal .modal-dialog .modal-content .item-details {
       margin: 30px 0; }
 
@@ -448,3 +458,204 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+
+/* Font Family
+================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+
+/* Global Styles
+================================================== */
+
+html,body {
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust:100%;
+  background-color:#0665a2;
+  color:#fff;
+  font-size:105%;
+  font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:300;
+  letter-spacing:.025rem;
+  line-height:1.618;
+  padding:1rem 0;
+}
+
+* {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+}
+
+
+/* Setup
+================================================== */
+
+.pl_container { position:relative; margin:0 auto; max-width:800px; width:100%; }
+.column { width:inherit; }
+
+
+/* Typography / Links
+================================================== */
+
+p { color:#fff; display:block; font-size:.9rem; font-weight:400; margin:0 0 2px; }
+
+a,a:visited { color:#8cc3e6; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbdef5; }
+p a,p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+.add-bottom { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+  margin:0 15px 0 14px;
+  width:670px;
+}
+
+#mainwrap {}
+
+#audiowrap,
+#plwrap {
+  margin:0 auto;
+}
+
+#tracks {
+  position:relative;
+  text-align:center;
+}
+
+#nowPlay {
+  display:inline;
+}
+
+#npAction {
+  padding:21px;
+  position:absolute;
+}
+
+#npTitle {
+  padding:21px;
+}
+
+#plList li {
+  cursor:pointer;
+  display:block;
+  margin:0;
+  padding:21px 0;
+}
+
+#plList li:hover {
+  background-color:rgba(0,0,0,.1);
+}
+
+.plItem {
+  position:relative;
+}
+
+.plTitle {
+  left:50px;
+  overflow:hidden;
+  position:absolute;
+  right:65px;
+  text-overflow:ellipsis;
+  top:0;
+  white-space:nowrap;
+}
+
+.plNum {
+  padding-left:21px;
+  width:25px;
+}
+
+.plLength {
+  padding-left:21px;
+  position:absolute;
+  right:21px;
+  top:0;
+}
+
+.plSel,
+.plSel:hover {
+  background-color:rgba(0,0,0,.1);
+  color:#fff;
+  cursor:default !important;
+}
+
+a[id^="btn"] {
+  border-radius:3px;
+  color:#fff;
+  cursor:pointer;
+  display:inline-block;
+  font-size:2rem;
+  height:35px;
+  line-height:.8;
+  margin:0 20px 20px;
+  padding:10px;
+  text-decoration:none;
+  transition:background .3s ease;
+  width:35px;
+}
+
+a[id^="btn"]:last-child {
+  margin-left:-4px;
+}
+
+a[id^="btn"]:hover,
+a[id^="btn"]:active {
+  background-color:rgba(0,0,0,.1);
+  color:#fff;
+}
+
+a[id^="btn"]::-moz-focus-inner {
+  border:0;
+  padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+  background-color:transparent;
+  border:none;
+  color:#fff;
+  padding:20px 20px 20px 13px;
+  width:100%;
+}
+
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+  background:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played, .plyr__volume--display {
+  color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+  background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+  color:rgba(0,0,0,.1);
+}
+
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:850px) {
+  #nowPlay { display:none; }
+}
