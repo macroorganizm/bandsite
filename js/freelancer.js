@@ -56,20 +56,50 @@ jQuery(function ($) {
       mediaPath = './tracks/',
       extension = '',
       tracks = [{
-        "track": 1,
-        "name": "Падає Вниз",
-        "length": "4:40",
-        "file": "falling_down"
+        track: 1,
+        name: "Падає Вниз",
+        length: "4:40",
+        file: "falling_down"
       }, {
-        "track": 2,
-        "name": "В глаза",
-        "length": "4:07",
-        "file": "in_my_eyes"
+        track: 2,
+        name: "В глаза",
+        length: "4:07",
+        file: "in_my_eyes"
       }, {
-        "track": 3,
-        "name": "Стрази",
-        "length": "2:56",
-        "file": "strazy"
+        track: 3,
+        name: "Стрази",
+        length: "2:56",
+        file: "strazy"
+      },{
+        track: 4,
+        name: "Дышать огнем",
+        length: "6:45",
+        file: "breath"
+      }, {
+        track: 5,
+        name: "Зеленооке диво",
+        length: "3:18",
+        file: "divo"
+      }, {
+        track: 6,
+        name: "Пробил час",
+        length: "4:37",
+        file: "hour"
+      },{
+        track: 7,
+        name: "Дотики, погляди",
+        length: "4:32",
+        file: "touches"
+      }, {
+        track: 8,
+        name: "Десь i колись",
+        length: "4:04",
+        file: "somwhere"
+      }, {
+        track: 9,
+        name: "Закрыты двери",
+        length: "4:25",
+        file: "closed"
       }],
       buildPlaylist = $.each(tracks, function(key, value) {
         var trackNumber = value.track,
@@ -92,6 +122,7 @@ jQuery(function ($) {
         playing = false;
         npAction.text('Paused...');
       }).bind('ended', function () {
+        console.log(index, trackCount)
         npAction.text('Paused...');
         if ((index + 1) < trackCount) {
           index++;
