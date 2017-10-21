@@ -38,23 +38,6 @@ hr.star-primary {
   text-align: center;
   border-top: solid 5px; }
 
-/*hr.star-light:after,*/
-/*hr.star-primary:after {*/
-  /*font-family: FontAwesome;*/
-  /*font-size: 2em;*/
-  /*position: relative;*/
-  /*top: -.8em;*/
-  /*display: inline-block;*/
-  /*padding: 0 0.25em;*/
-  /*content: '\f005'; }*/
-
-/*hr.star-light {
-  border-color: white; }
-
-hr.star-light:after {
-  color: white;
-  background-color: #18BC9C; }*/
-
 hr.star-primary {
   border-color: white; }
 
@@ -99,7 +82,7 @@ section.success {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  background: #2C3E50; }
+  background: #ffb100; }
   #mainNav a:focus {
     outline: none; }
   #mainNav .navbar-brand {
@@ -121,11 +104,15 @@ section.success {
     padding: 11px;
     text-transform: uppercase;
     color: white;
-    border-color: white; }
+    border-color: white; 
+    position: absolute;
+    left: 280px;
+  }
+
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
       color: white;
-      border-color: #18BC9C;
-      background-color: #18BC9C; }
+      border-color: white;
+      background-color: black; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -151,7 +138,9 @@ section.success {
     padding-top: 10px;
     padding-bottom: 10px; }
     #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.5em; } 
+
+    }
 
 header.masthead {
   padding-top: 100px;
@@ -181,7 +170,9 @@ header.masthead {
     header.masthead .intro-text .name {
       font-size: 4.75em; }
     header.masthead .intro-text .skills {
-      font-size: 1.75em; } }
+      font-size: 1.75em; } 
+
+    }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -229,7 +220,9 @@ header.masthead {
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; } 
+
+  }
 
 .portfolio-modal .modal-dialog {
   max-width: 100%;
@@ -454,7 +447,7 @@ footer {
 /* Font Family
 ================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');*/
 
 
 /* Global Styles
@@ -510,7 +503,7 @@ p a,p a:visited { line-height:inherit; }
 
 audio {
   margin:0 15px 0 14px;
-  width:470px;
+  width: 90%;
 }
 
 #mainwrap {}
@@ -521,7 +514,6 @@ audio {
 }
 
 #audio0 {
-  background: black;
   padding-top: 7px;
 }
 
