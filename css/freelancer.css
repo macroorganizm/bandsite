@@ -18,7 +18,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-  color: #ff8d00;
+  color: #ffb100;
   outline: none; }
 
 h1,
@@ -322,7 +322,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C; }
+  color: #ffb100; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee; }
@@ -333,7 +333,7 @@ footer {
     margin-bottom: 5px; }
   footer .footer-above {
     padding-top: 5px;
-    background-color: #ff8d00; }
+    background-color: #ffb100; }
   footer .footer-col {
     margin-bottom: 5px; }
   footer .footer-below {
@@ -547,7 +547,7 @@ audio {
 #plList li:hover {
   /*background-color: black;*/
   /*opacity: 0.5;*/
-  color: #ff9900;
+  color: #ff7e00;
   margin-right: 2px;
   /*outline: #ff9900 2px solid;*/
 }
@@ -580,7 +580,7 @@ audio {
 
 .plSel,
 .plSel:hover {
-  background-color: #ffa500;
+  background-color: #ffb100;
   cursor:default !important;
 }
 
